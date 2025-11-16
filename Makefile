@@ -10,9 +10,9 @@ TARGET = build
 
 CXXFLAGS = -Iinclude
 
-SOURCES = main.cpp src/software.cpp
+SOURCES = main.cpp src/software.cpp src/nelva.cpp
 
-OUTPUT = Nelva
+OUTPUT = nelva
 
 $(TARGET): $(SOURCES)
 	$(CXX) $(CXXFLAGS) $(SOURCES) -o $(OUTPUT)

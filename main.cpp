@@ -1,13 +1,19 @@
-#include <cstdlib>
-#include <iostream>
-#include <iomanip>
 
-#include "include/software.h"
+#include "include/nelva.h"
 
 using namespace std;
 
 int main(int argc, char* argv[]){
-    const string hr = "---------------------------------------------";
-    cout << username << "\n\n\n\n\n";
+    for(int i = 1; i < argc; ++i){
+        string arg = argv[i];
+
+        if(arg == "-h" || arg == "--help"){
+            help();
+        } else if( arg == "-v" || arg == "--version"){
+            version();
+        } else if( arg == "-u" | arg == "--user"){
+            user();
+        }
+    };
     return EXIT_SUCCESS;
 }

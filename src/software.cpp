@@ -1,5 +1,7 @@
 #include "../include/software.h"
 #include <cstring>
+#include <string>
+#include <sys/utsname.h>
 
 #ifdef _WIN32
 
@@ -22,11 +24,11 @@ const string hostname = []{
 }();
 
 //Getting the OS Information
-struct utsname os;
-
-
-const string os_name(){
-    return os.sysname;
+int oper(){
+    struct utsname os;
+    uname(&os);
+    const string os_name(string(os.sysname));
+    return 0;
 };
 
 #endif //_WIN32

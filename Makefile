@@ -8,9 +8,9 @@ INSTALL = install
 
 TARGET = build
 
-CXXFLAGS = -Iinclude
+CXXFLAGS = -Iinclude 
 
-SOURCES = main.cpp src/software.cpp src/nelva.cpp
+SOURCES = main.cpp $(wildcard src/*cpp)
 
 OUTPUT = nelva
 

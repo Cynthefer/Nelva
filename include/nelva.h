@@ -7,6 +7,6 @@
 
     using namespace std;
 
-    int help(), version(), user();
+    int help(), version(), user(), operating(), oper();
 
 #endif//NELVA_H

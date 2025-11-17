@@ -32,7 +32,7 @@ extern const string hostname;
 extern const string directory;
 
 //Operating System Information
-extern const string os_name();
+extern const string os_name;
 extern const string os_node;
 extern const string os_domain;
 extern const string os_kernel;

@@ -3,6 +3,8 @@
 #include <string>
 #include <sys/utsname.h>
 
+using namespace std;
+
 #ifdef _WIN32
 
 #else
@@ -23,12 +25,16 @@ const string hostname = []{
     return string(name);
 }();
 
-//Getting the OS Information
 int oper(){
     struct utsname os;
     uname(&os);
-    const string os_name(string(os.sysname));
+    cout << setw(28) << setiosflags(ios::left) << " Operating System " << ":" << os.sysname << endl;
+    cout << setw(28) << setiosflags(ios::left) << " Node name " << ":" << os.nodename << endl;
+    cout << setw(28) << setiosflags(ios::left) << " Kernel Release " << ":" << os.release << endl;
+    cout << setw(28) << setiosflags(ios::left) << " Kernel Version " << ":" << os.sysname << endl;
+    cout << setw(28) << setiosflags(ios::left) << " Architecture " << ":" << os.machine << endl;
+    cout << setw(28) << setiosflags(ios::left) << " Domain Name " << ":" << os.domainname << endl;
     return 0;
-};
+}
 
 #endif //_WIN32

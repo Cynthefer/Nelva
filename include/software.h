@@ -3,6 +3,8 @@
 
 #include <string>
 #include <stdio.h>
+#include <iostream>
+#include <iomanip>
 
 #ifdef _WIN32
     #include <windows.h>
@@ -30,24 +32,6 @@ extern const unsigned int group_id;
 extern const string shell;
 extern const string hostname;
 extern const string directory;
-
-//Operating System Information
-extern const string os_name;
-extern const string os_node;
-extern const string os_domain;
-extern const string os_kernel;
-extern const string os_version;
-extern const string os_architecture;
-
-/*
-extern const string os_domain;
-extern const string hostname;
-extern const string hostname;
-extern const string hostname;
-extern const string hostname;
-extern const string hostname;
-extern const string hostname;
-*/
 
 #endif// SOFTWARE_H
 
